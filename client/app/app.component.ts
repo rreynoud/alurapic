@@ -1,9 +1,9 @@
-import {component} from '@angular/core'
+// alurapic/client/app/app.component.ts
+
+import {Component} from '@angular/core';
 
 @Component({
-	
-	selector: 'app',
-	templateUrl: './app/app.component.html'
+    selector: 'app',
+    templateUrl: './app/app.component.html'
 })
-
-class AppComponent{}
+export class AppComponent {}
