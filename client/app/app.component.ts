@@ -8,9 +8,10 @@ import { Http } from '@angular/http';
     templateUrl: './app.component.html'
 })
 export class AppComponent {
-    fotos = [];
+    
+    fotos: Array<Object> = [];
 
-    constructor(@Inject(Http) http) {        
+    constructor(http: Http) {        
         
     }    
 }
