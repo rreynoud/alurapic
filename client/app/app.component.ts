@@ -15,16 +15,11 @@ export class AppComponent {
         
         console.log('Construindo AppComponent');
 
-        
-        let stream = http.get('v1/fotos');
-        
-        console.log('indo consultar');
-
-        stream.subscribe(res => {
-            this.fotos = res.json(); // that é a instância da classe Foto
+        http.get('v1/fotos').subscribe(res => {
+            this.fotos = res.json();
             console.log('Resposta da consulta');
             console.log(this.fotos);
-        });        
-
+        });
+        
     }    
 }
