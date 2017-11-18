@@ -4,10 +4,10 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 
 
 const appRoutes: Routes  = [
-    { path: '', component: ListagemComponent },
-    { path: '**', redirectTo: '' },
+    { path: '', component: ListagemComponent },    
     { path: 'listagem', component: ListagemComponent },
-    { path: 'cadastro', component: CadastroComponent }
+    { path: 'cadastro', component: CadastroComponent },
+    { path: '**', redirectTo: '' }
 
     
 ];
