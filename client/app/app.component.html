@@ -2,7 +2,9 @@
     <h1 class="text-center">Alurapic</h1>    
     
     <div class="container">
-        <foto *ngFor="let foto of fotos" [url]="foto.url" [titulo]="foto.titulo"></foto>
+        <painel *ngFor="let foto of fotos" titulo="{{foto.titulo}}"  >
+            <foto titulo="{{foto.titulo}}" url="{{foto.url}}" ></foto>
+        </painel>        
      </div>
 
 </div> 
